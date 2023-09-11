@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+      <title>Advanced Search</title>
+    </head>
+    <body bg-white>
+        <div class=" absolute top-0 right-4 text-black mt-4 ">
+            <a class="mx-4" href="index.html">Search</a>
+            <a href="images.html">Images</a>
+          </div>
+        <div class="h-40 w-9/12">
+            <div class="pl-16 pt-8 w-48 h-38">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
+            <div class="text-red-600 font-semibold text-xl text-left pl-12 my-10 pb-">
+                Advanced search               
+            </div>
+           
+        </div>
+         <br>
+        <div>
+            <p class="text-xl ml-10">
+                Find pages with...
+            </p>
+         <form action="https://www.google.com/search" method="get"  class="flex mx-7 my-6 justify-items-start pl-12 m-14">
+            <div >
+                    <label for="all" class="mr-20"> all these words: </label>
+                    <input id="all" type="search" autocomplete="off" name="q" class="bg-Zinc-700 border-black border rounded-xl" >
+            </div>
+         </form>
+         <form action="https://www.google.com/search" method="get"  class="flex mx-7 my-6 justify-items-start pl-12 m-14">
+            <div>
+                <label for="exact" class="mr-2" > this exact word or phrase:</label>
+                <input id="exact" type="search" autocomplete="off" name="as_epq" class=" border-black border rounded-xl" >                
+            </div>
+        </form>
+        <form action="https://www.google.com/search" method="get"  class="flex mx-7 my-6 justify-items-start pl-12 m-14">
+            <div>
+                <label for="any" class="mr-14"> any of these words:</label>
+                <input id="any" type="search" autocomplete="off" name="as_oq" class=" border-black rounded-xl border">                
+            </div>
+        </form>
+        <form action="https://www.google.com/search" method="get"  class="flex mx-7 my-6 justify-items-start pl-12 m-14">       
+            <div>
+                <label for="none" class="mr-12"> none of these words: </label>
+                <input id="none" type="search" autocomplete="off" name="as_eq" class=" rounded-xl border-black border">
+            </div>
+          </form>
+        </div>
+        
+    </body>
+</html> 
